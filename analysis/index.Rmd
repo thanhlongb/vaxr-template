@@ -8,4 +8,52 @@ editor_options:
   chunk_output_type: console
 ---
 
-Welcome to my research website.
+# Data Analysis Flow
+
+## Introduction
+
+-   Briefly introduce the purpose of the data analysis and the dataset being used.
+
+```{r}
+use <- function(file_name) {
+  source(paste0(getwd(), "/code/", file_name))
+}
+
+use('helpers.R')
+hello_world()
+```
+
+## Data Preparation
+
+-   Load the necessary libraries.
+-   Import the dataset.
+-   Explore the structure and summary statistics of the dataset.
+-   Clean and preprocess the data (e.g., handle missing values, outliers, etc.).
+-   Perform any necessary data transformations (e.g., scaling, encoding, etc.).
+
+## Exploratory Data Analysis
+
+-   Generate descriptive statistics (e.g., mean, median, standard deviation, etc.).
+-   Visualize the data using appropriate plots (e.g., histograms, scatter plots, box plots, etc.).
+-   Identify patterns, trends, and relationships in the data.
+-   Conduct statistical tests or calculations to gain insights.
+
+## Data Modeling
+
+-   Split the dataset into training and testing sets.
+-   Select an appropriate machine learning algorithm or statistical model.
+-   Train the model using the training set.
+-   Evaluate the model's performance using appropriate metrics.
+-   Fine-tune the model if necessary (e.g., hyperparameter tuning).
+-   Validate the model using the testing set.
+
+## Results and Conclusion
+
+-   Summarize the findings from the data analysis.
+-   Present the results using visualizations and tables.
+-   Discuss the implications and limitations of the analysis.
+-   Provide recommendations or next steps based on the results.
+
+## References
+
+-   List any references or sources used in the analysis.
